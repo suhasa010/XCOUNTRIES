@@ -1,11 +1,11 @@
 describe("Countries App", () => {
   beforeEach(() => {
-    cy.visit("https://xcountries.vercel.app/");
+    cy.visit("http://localhost:3000");
   });
 
   describe("Loading and Initial Display", () => {
     it("makes an API call and displays initial content", () => {
-      cy.intercept("GET", "https://xcountries-backend.azurewebsites.net/all").as(
+      cy.intercept("GET", "https://xcountries-backend.labs.crio.do/all").as(
         "getCountries"
       );
       cy.wait("@getCountries").its("response.statusCode").should("eq", 200);
@@ -16,7 +16,7 @@ describe("Countries App", () => {
   describe("Flag Display", () => {
     it("displays country flags with alt text", () => {
       cy.get("img")
-        .should("have.length.at.least", 90)
+        .should("have.length.at.least", 250)
         .and(($imgs) => {
           expect($imgs).to.have.attr("alt").and.not.be.empty;
         });
@@ -41,7 +41,7 @@ describe("Countries App", () => {
       });
   
       // Intercept the API request and force a network error
-      cy.intercept("GET", "https://xcountries-backend.azurewebsites.net/all", {
+      cy.intercept("GET", "https://xcountries-backend.labs.crio.do/all", {
         forceNetworkError: true,
       }).as("getFailedCountries");
   
@@ -54,5 +54,4 @@ describe("Countries App", () => {
       cy.get("@consoleError").should("be.calledWithMatch", /Error fetching data:/);
     });
   });
-  
 });
