@@ -1,0 +1,202 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "118.0.5993.159",
+  "config": {
+    "projectRoot": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment",
+    "projectName": "assessment",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "arm64",
+    "baseUrl": null,
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalFetchPolyfill": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "experimentalSkipDomainInjection": null,
+    "experimentalJustInTimeCompile": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment",
+    "fixturesFolder": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "linux",
+    "pageLoadTimeout": 60000,
+    "port": 44969,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "/usr/bin/node",
+    "resolvedNodeVersion": "20.19.2",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/support/e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 118,
+        "name": "electron",
+        "path": "",
+        "version": "118.0.5993.159"
+      }
+    ],
+    "cypressBinaryRoot": "/home/pi/.cache/Cypress/13.17.0/Cypress/resources/app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "13.17.0",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "13.17.0",
+  "endedTestsAt": "2026-06-26T10:51:01.574Z",
+  "osName": "linux",
+  "osVersion": "Debian - 13",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 5,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-06-26T10:50:26.492Z",
+        "end": "2026-06-26T10:51:01.612Z",
+        "duration": 35120
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "/home/pi/workspace/suhasasj-ME_FE_BUILDOUT_XCOUNTRIES/assessment/cypress/e2e/spec.cy.js",
+        "fileExtension": ".js",
+        "fileName": "spec",
+        "name": "spec.cy.js",
+        "relative": "cypress/e2e/spec.cy.js"
+      },
+      "stats": {
+        "duration": 35114,
+        "endedAt": "2026-06-26T10:51:01.574Z",
+        "failures": 0,
+        "passes": 4,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-06-26T10:50:26.460Z",
+        "suites": 5,
+        "tests": 4
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 14399,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Loading and Initial Display",
+            "makes an API call and displays initial content"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 4690,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Flag Display",
+            "displays country flags with alt text"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 4988,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "Country Name Display",
+            "displays country names"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2278,
+          "state": "passed",
+          "title": [
+            "Countries App",
+            "API Error Handling",
+            "logs an error to the console on API failure"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2026-06-26T10:50:26.460Z",
+  "totalDuration": 35114,
+  "totalFailed": 0,
+  "totalPassed": 4,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 5,
+  "totalTests": 4
+}
